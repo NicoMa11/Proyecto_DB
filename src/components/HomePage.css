@@ -1,0 +1,70 @@
+.homepage {
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    height: 84vh;
+    overflow: hidden; 
+  }
+  
+
+  .homepage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("C:/Users/nmari/ReactProyects/deligestion_bd/public/fondo.jpg"); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); 
+    z-index: -1; 
+    opacity: 10; 
+  }
+  
+  /* Estilo de los títulos */
+  .homepage h1 {
+    color: #f8ddbc; 
+    font-size: 4rem;
+    margin-bottom: 0px;
+    position: relative; 
+    z-index: 1;
+  }
+  
+  .homepage h2 {
+    color: #f0972b; 
+    font-size: 2rem;
+    margin-top: 0px; 
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Estilo del grupo de botones */
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1; 
+    align-items: stretch;
+  }
+  
+  .button-group button {
+    min-width: 300px;
+    background-color: #f1c48c; 
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-group button:hover {
+    background-color: #f5aa5b; 
+  }
+  
